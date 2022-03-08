@@ -29,6 +29,19 @@ function buildFoodList(todo) {
   p.appendChild(btn);
   btn.addEventListener('click', handleDelete);
   document.querySelector('#food_list').appendChild(p);
+
+  // Fetch Request POST to send food list to database
+  fetch('http://localhost:3000/foodItems', {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(p)
+  })
+  .then(res => res.json())
+  .then(food => (food))
+
 }
 
 function buildStepsList(todo) {
@@ -40,6 +53,20 @@ function buildStepsList(todo) {
   p.appendChild(btn);
   btn.addEventListener('click', handleDelete);
   document.querySelector('#steps_list').appendChild(p);
+
+  // Fetch Request POST to send steps list to database
+  fetch('http://localhost:3000/stepsNumber', {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(p)
+  })
+  .then(res => res.json())
+  .then(step => (step))
+
+
 }
 
 function handleDelete(e) {
