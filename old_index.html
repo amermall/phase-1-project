@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Food and Step Log</title>
+  </head>
+
+  <body>
+    <nav class="indigo darken-3">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Food & Steps logger</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><input id="gather_items" type="submit" value="Gather food items and steps" /></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card blue lighten-5">
+          <div class="card-content black-text">
+            <span class="card-title">Food:</span>
+
+            <form id="add_food_form" action="" method="POST">
+              <input
+                type="text"
+                id="food_item_info"
+                name="food_item_info"
+                placeholder="Enter food"
+              />
+              <input type="submit" value="Add food" />
+            </form>
+      
+            <div id="list">
+              <h6>List of eaten items:</h6>
+              <div id="food_list"></div>
+            </div>
+        </div>
+      </div>
+    </div> <!-- END OF CARD 1 -->
+
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card blue lighten-5">
+          <div class="card-content black-text">
+            <span class="card-title">Steps:</span>
+
+            <form id="add_steps_form" action="" method="POST">
+              <input
+                type="text"
+                id="numer_of_steps"
+                name="numer_of_steps"
+                placeholder="Enter number of steps"
+              />
+              <input type="submit" value="Add steps" />
+            </form>
+      
+            <div id="list">
+              <h6>Number of steps:</h6>
+              <div id="steps_list"></div>
+            </div>
+        </div>
+      </div>
+    </div> <!-- END OF CARD 2 -->
+
+    <div id="gathered_content">
+      <!-- Place to put content from json.db -->
+    </div>
+
+    <script src="./javascripts/index.js"></script>
+  </body>
+</html>

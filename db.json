@@ -1,17 +1,13 @@
 {
   "foodItems": [
     {
+      "name": "Pizza",
       "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
     }
   ],
   "stepsNumber": [
     {
+      "steps": "34567",
       "id": 1
     }
   ]
