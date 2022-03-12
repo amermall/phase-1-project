@@ -1,7 +1,5 @@
 # Phase 1 Project: Log food items and steps
 
----
-
 ## Overview:
 
 The web app will allow a user to enter food items, as well as the number of steps and then have that information render on the page.
