@@ -14,9 +14,8 @@ The web app will allow a user to enter food items, as well as the number of step
 
 ## Directions:
 
-via the form field and then click "Add food".
-to display under the section of
+The webpage presents the user with two input sections. One for **Food:** items and another for number of **Steps:**.
 
-- LogLog Food Items (food item form, submit, json server?)
-  Submit number of steps (form, submit)
-  Display Text for mockup of email, (click)
+1. Enter a food item in the field provided with the place holder text of "Enter food".
+2. After entering the food item, Click the **Add food** button. This will display the food item in the section called **List of eaten items:**. As you enter another food item, it will add that item display it right below the other items.
+3. To remove an item, a **Remove** labeled button is provided after each item that has been added.
