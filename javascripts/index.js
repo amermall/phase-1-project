@@ -55,6 +55,7 @@ function buildFoodList(foodItem) {
   
   // b. Create "p" tag HTML element and assign it to a variable
   let p = document.createElement('p');
+  // console.log(li);
 
   // c. Create textContent for "p" tag and give p.textContent what is being entered in the food form input field
   p.textContent = `${foodItem} `;
