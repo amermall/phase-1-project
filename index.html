@@ -23,16 +23,31 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title>Food and Step Log</title>
+    <title>Food and steps logged for the day</title>
   </head>
   <body>
     <nav class="indigo darken-3">
       <div class="nav-wrapper container">
-        <a href="#" class="brand-logo">Food & Steps Logger</a>
+        <a id="home-page-link" href="#" class="brand-logo"
+          >Logging Food & Steps</a
+        >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#" id="logged-food-steps-link">Logged Food & Steps</a>
+          </li>
+          <li>
+            <a href="#" id="meal-list-link">Log NEW Entry of Food & Steps</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <div class="container">
+      <div id="main"></div>
+    </div>
+
+    <!-- <div class="container">
+      <h3 class="center-align">Welcome to Logging Food & Steps</h3>
 
       <div class="row">
         <div class="col s12 m6">
@@ -56,7 +71,7 @@
               </div>
           </div>
         </div>
-      </div><!-- END OF CARD 1 -->
+      </div>
 
       <div class="row">
         <div class="col s12 m6">
@@ -80,9 +95,9 @@
               </div>
           </div>
         </div>
-      </div><!-- END OF CARD 2 -->
+      </div>
 
-    </div><!-- END OF CONTAINER -->
+    </div> -->
 
     <script src="./javascripts/index.js"></script>
   </body>

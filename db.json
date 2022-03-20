@@ -1,22 +1,40 @@
 {
-  "foodItems": [
+  "foodsAndSteps": [
     {
-      "name": "Apple",
-      "id": 1
+      "id": 1, 
+      "date": "11/15/2021",
+      "breakfast": "Oatmeal",
+      "lunch": "Tacos",
+      "dinner": "Pork Chops",
+      "snack": "Ice Cream",
+      "steps": 2345
     },
     {
-      "name": "Pizza",
-      "id": 2
+      "id": 2, 
+      "date": "12/15/2021",
+      "breakfast": "Apple Jacks cereal",
+      "lunch": "Hot Dogs and Fries",
+      "dinner": "Chili",
+      "snack": "Cookie",
+      "steps": 3456
     },
     {
-      "name": "Hot dogs",
-      "id": 3
-    }
-  ],
-  "stepsNumber": [
+      "id": 3, 
+      "date": "12/16/2021",
+      "breakfast": "Fruit and Granola",
+      "lunch": "Turkey Sub",
+      "dinner": "Grilled Chicken",
+      "snack": "Chips",
+      "steps": 5678
+    },
     {
-      "steps": "345",
-      "id": 1
+      "id": 4, 
+      "date": "12/17/2021",
+      "breakfast": "Omelette",
+      "lunch": "Peanut & Butter sandwich",
+      "dinner": "Fajitas",
+      "snack": "Apple",
+      "steps": 4325
     }
   ]
 }
