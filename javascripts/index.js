@@ -1,7 +1,11 @@
-/** Globals **/
+/***************/
+/** Globals ****/
+/***************/
 let foodStepsItems = [];
 
+/***************/
 /** ID Getters **/
+/***************/
 const mainDiv = () => document.getElementById("main");
 const homePageLink = () => document.getElementById("home-page-link");
 const loggedFoodStepsLink = () => document.getElementById("logged-food-steps-link");
@@ -13,6 +17,7 @@ const dinnerInput = () => document.getElementById('dinner');
 const stepsInput = () => document.getElementById('steps');
 
  
+/***************/
 /** Templates **/
 /***************/
 // meal template
@@ -37,6 +42,7 @@ const foodStepsItemsTemplate = (item) => {
   return tr;
 }
 
+/***************/
 /** Renderers **/
 /***************/
 const renderHomePage = () => {
@@ -170,7 +176,8 @@ const renderFoodStepsItems = () => {
   // for every item we have we are going to call foodStepsItemsTemplate
 }
 
-/** Events **/
+/***************/
+/** Events *****/
 /***************/
 // const loadFoodsStepsFromDb = () => {
 //   fetch('http://localhost:3000/foodsAndSteps')

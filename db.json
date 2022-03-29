@@ -39,6 +39,14 @@
       "dinner": "Pizza",
       "steps": "2333",
       "id": 5
+    },
+    {
+      "date": "3/28/2022",
+      "breakfast": "Oatmeal",
+      "lunch": "Rice",
+      "dinner": "Soup",
+      "steps": "3444",
+      "id": 6
     }
   ]
 }
