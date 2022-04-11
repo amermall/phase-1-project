@@ -21,18 +21,19 @@ const stepsInput = () => document.getElementById('steps');
 /** Templates **/
 /***************/
 // meal template
-const foodStepsItemsTemplate = (item) => {
+const foodStepsItemsTemplate = ({date, breakfast, lunch, dinner, steps}) => {
+  // const {date, breakfast, lunch, dinner, steps} = item
   const tr = document.createElement('tr');
   const tdDate = document.createElement('td');
   const tdBreakfast = document.createElement('td');
   const tdLunch = document.createElement('td');
   const tdDinner = document.createElement('td');
   const tdSteps = document.createElement('td');
-  tdDate.innerText = item.date;
-  tdBreakfast.innerText = item.breakfast;
-  tdLunch.innerText = item.lunch;
-  tdDinner.innerText = item.dinner;
-  tdSteps.innerText = item.steps;
+  tdDate.innerText = date;
+  tdBreakfast.innerText = breakfast;
+  tdLunch.innerText = lunch;
+  tdDinner.innerText = dinner;
+  tdSteps.innerText = steps;
   tr.appendChild(tdDate);
   tr.appendChild(tdBreakfast);
   tr.appendChild(tdLunch);
@@ -52,7 +53,7 @@ const renderHomePage = () => {
 
 
 // render meals list page
-const renderfoodsStepsLogPage = async () => {
+const renderFoodsStepsLogPage = async () => {
   await loadFoodsStepsFromDb();
   mainDiv().innerHTML = '';
   const h1 = document.createElement('h1');
@@ -182,37 +183,44 @@ const renderFoodStepsItems = () => {
 // const loadFoodsStepsFromDb = () => {
 //   fetch('http://localhost:3000/foodsAndSteps')
 //   .then(resp => resp.json())
-//   .then(data => meals = data)
+//   .then(data => foodStepsItems = data)
 // }
 const loadFoodsStepsFromDb = async () => {
   const resp = await fetch('http://localhost:3000/foodsAndSteps');
   const data = await resp.json();
   foodStepsItems = data;
+  // debugger;
 }
 
 const homePageLinkEvent = () => {
   homePageLink().addEventListener('click', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     renderHomePage();
   })
 }
 
 const loggedFoodStepsLinkEvent = () => {
-  loggedFoodStepsLink().addEventListener('click', async (e) => {
-    e.preventDefault();
-    renderfoodsStepsLogPage();
+  loggedFoodStepsLink().addEventListener('click', (e) => {
+    // const num = document.getElementById("num");
+    // console.log(num.value);
+    // incrementNum = num.value;
+    // incrementNum++;
+    // num.innerText = incrementNum;
+    
+    renderFoodsStepsLogPage();
   })
 }
 
+// Click events do not prevent defaults..
 const logNewEntryLinkEvent = () => {
   newEntryFormLink().addEventListener('click', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     renderLogNewEntryForm();
   })
 }
 
 const submitFormEvent = e => {
-  e.preventDefault();
+  // e.preventDefault();
 
   console.log('date', dateInput().value);
   console.log('breakfast', breakfastInput().value);
@@ -236,17 +244,18 @@ const submitFormEvent = e => {
   })
   .then(resp => resp.json())
   .then(data => {
-    // console.log(data)
-    renderfoodsStepsLogPage();
+    console.log(data)
+    renderFoodsStepsLogPage();
   })
 }
 
 /**********************************************************/
 
 /** When the DOM loads... **/
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   renderHomePage();
   homePageLinkEvent();
   loggedFoodStepsLinkEvent();
   logNewEntryLinkEvent();
 })
+

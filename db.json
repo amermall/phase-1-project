@@ -1,52 +1,36 @@
 {
   "foodsAndSteps": [
     {
-      "date": "04/15/2022",
-      "breakfast": "Eggs",
-      "lunch": "Turkey club",
-      "dinner": "Pot roast",
-      "steps": "4456",
+      "date": "03/29/2022",
+      "breakfast": "Cereal",
+      "lunch": "Salad",
+      "dinner": "Soup",
+      "steps": "4564",
       "id": 1
     },
     {
-      "date": "3/4/2022",
-      "breakfast": "Eggs",
-      "lunch": "Ham leftovers",
-      "dinner": "Quiche",
-      "steps": "3345",
+      "date": "12/22/2022",
+      "breakfast": "Oatmeal",
+      "lunch": "Tacos",
+      "dinner": "Hot dog",
+      "steps": "4588",
       "id": 2
     },
     {
-      "date": "03/06/1977",
-      "breakfast": "Omelette",
-      "lunch": "Chicken soup",
-      "dinner": "Fish",
-      "steps": "4555",
+      "date": "12/23/2022",
+      "breakfast": "Oatmeal",
+      "lunch": "Steak",
+      "dinner": "Pizza",
+      "steps": "4564",
       "id": 3
     },
     {
-      "date": "12/22/2022",
-      "breakfast": "Cereal",
-      "lunch": "Tacos",
-      "dinner": "Soup",
-      "steps": "2333",
+      "date": "",
+      "breakfast": "",
+      "lunch": "",
+      "dinner": "",
+      "steps": "",
       "id": 4
-    },
-    {
-      "date": "12/22/2022",
-      "breakfast": "Cereal",
-      "lunch": "Tacos",
-      "dinner": "Pizza",
-      "steps": "2333",
-      "id": 5
-    },
-    {
-      "date": "3/28/2022",
-      "breakfast": "Oatmeal",
-      "lunch": "Rice",
-      "dinner": "Soup",
-      "steps": "3444",
-      "id": 6
     }
   ]
 }
